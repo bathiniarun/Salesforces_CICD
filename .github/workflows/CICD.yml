@@ -32,4 +32,5 @@ jobs:
 
       - name: Deploy source code to DeployTestOrg Org
         run: |
-          sfdx force:source:deploy -p force-app/main/default -w 10 -u arunkumargoud147@gmail.com
+          sfdx project deploy start -p force-app/main/default -w 10 -u arunkumargoud147@gmail.com
+
