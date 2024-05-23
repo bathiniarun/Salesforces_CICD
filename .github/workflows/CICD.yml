@@ -32,7 +32,6 @@ jobs:
 
       - name: Deploy source code to DeployTestOrg Org
         run: |
-          sfdx force:auth:web:login -a Devcenter --instanceurl https://sentara9-dev-ed.develop.my.salesforce.com --setdefaultusername -i 00Dbm000001AeMzEAK -r https://sentara9-dev-ed.my.salesforce.com
-          sfdx project deploy start -p force-app/main/default -w 10 -u arunkumargoud147@gmail.com -o Devcenter
+          sfdx project deploy start -p force-app/main/default -w 10 -u arunkumargoud147@gmail.com
 
 
