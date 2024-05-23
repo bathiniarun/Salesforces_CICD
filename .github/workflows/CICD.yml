@@ -28,7 +28,7 @@ jobs:
 
       - name: Authorize Salesforce DeployTestOrg Org
         run: |
-          sfdx force:auth:jwt:grant --clientid 3MVG91oqviqJKoEEvC8yay14X5dd0Np7U_UZ67YiqjtUtMyAA0.PXvYn6F_9fTA2H16dh1gMybbn7EHjEP2xg --jwtkeyfile /bin/server.key --username arunkumargoud147@gmail.com --instanceurl https://login.salesforce.com
+          sfdx force:auth:jwt:grant --clientid 3MVG91oqviqJKoEEvC8yay14X5dd0Np7U_UZ67YiqjtUtMyAA0.PXvYn6F_9fTA2H16dh1gMybbn7EHjEP2xg --jwtkeyfile bin/key.pem --username arunkumargoud147@gmail.com --instanceurl https://login.salesforce.com
 
       - name: Deploy source code to DeployTestOrg Org
         run: |
