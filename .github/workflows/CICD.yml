@@ -29,8 +29,14 @@ jobs:
       - name: Authorize Salesforce DeployTestOrg Org
         run: |
           sfdx force:auth:jwt:grant --clientid 3MVG91oqviqJKoEEvC8yay14X5dd0Np7U_UZ67YiqjtUtMyAA0.PXvYn6F_9fTA2H16dh1gMybbn7EHjEP2xg --jwtkeyfile bin/key.pem --username arunkumargoud147@gmail.com --instanceurl https://login.salesforce.com
-
+  
+      - name: Verify Salesforce Connection
+        id: verify_connection
+        run: |
+          sfdx force:org:display -u arunkumargoud147@gmail.com
+          
       - name: Deploy source code to DeployTestOrg Org
+        if: steps.authenticate.outcome == 'success'
         run: |
           sfdx project deploy start -p force-app/main/default -w 10 -u arunkumargoud147@gmail.com
 
