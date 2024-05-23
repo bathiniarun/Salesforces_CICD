@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
-    <contactEmail>arunkumargoud147@gmail.com</contactEmail>
-    <contactPhone>5126186137</contactPhone>
-    <description>Manage your development and release processes</description>
-    <label>DevOps Center</label>
-    <logoUrl>https://login.salesforce.com/logos/Salesforce/SalesCloud/logo.png</logoUrl>
-    <startUrl>/sf_devops/DevOpsCenter.app</startUrl>
-</ConnectedApp>
