@@ -36,7 +36,6 @@ jobs:
           sfdx force:org:display -u arunkumargoud147@gmail.com
           
       - name: Deploy source code to DeployTestOrg Org
-        if: steps.authenticate.outcome == 'success'
         run: |
           sfdx project deploy start -p force-app/main/default -w 10 -u arunkumargoud147@gmail.com
 
